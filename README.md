@@ -28,7 +28,7 @@ A modern and responsive web application built with [Next.js](https://nextjs.org/
 
 ## Live Link
 
-Your link here
+[click here](https://softnio-landing-page-design.vercel.app/)
 
 ## Getting Started
 
