@@ -65,6 +65,7 @@ const FooterCards = () => {
             src={content.icon || "/clock.svg"}
             alt="footer_card_icon"
             className="size-[26px]"
+            imageClassName="object-contain"
           />
 
           <div className="flex flex-col gap-[12px] items-center">
