@@ -9,7 +9,7 @@ import TodayOffer from "./today-offer";
 const Hero = () => {
   return (
     <section className="bg-hero-red-gradient">
-      <div className="bg-hero-pattern bg-no-repeat bg-cover">
+      <div className="bg-hero-pattern-mobile sm:bg-hero-pattern bg-no-repeat bg-cover">
         <MaxWidthWrapper>
           <div className="flex  flex-col gap-y-12 sm:gap-y-0 sm:flex-row pt-[109px] pb-8 sm:pt-[238px] sm:pb-[160px]">
             {/* hero left */}
