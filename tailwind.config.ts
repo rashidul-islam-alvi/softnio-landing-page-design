@@ -17,7 +17,7 @@ const config: Config = {
           "linear-gradient(90deg, #BD1F17 28%, #A51D13 60%, #8E1B0F 100%)",
         "text-red-opacity-gradient":
           "linear-gradient(90deg, rgba(189, 31, 23, 0) 33%, rgba(189, 31, 23, 0.7) 100%)",
-        "hero-pattern": "url('/hero-pattern.png')",
+        "hero-pattern": "url('/hero-pattern-min.webp')",
         "footer-background-image": "url('/footer.webp')",
         "booking-form-background-image": "url('/form-bg.png')",
       },
