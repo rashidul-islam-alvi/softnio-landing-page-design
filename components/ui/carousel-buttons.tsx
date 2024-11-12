@@ -27,6 +27,7 @@ const CarouselButtons = ({
         variant="icon"
         size="icon"
         className="shadow-icon-shadow hover:bg-chili-red/20 duration-300 transition-all ease-in-out"
+        aria-label="Previous slide"
       >
         <LeftArrow />
       </Button>
@@ -35,6 +36,7 @@ const CarouselButtons = ({
         variant="icon"
         size="icon"
         className="shadow-icon-shadow hover:bg-chili-red/20 duration-300 transition-all"
+        aria-label="Next slide"
       >
         <RightArrow />
       </Button>
