@@ -20,12 +20,12 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { id: 1, label: "Home", link: "/home" },
-  { id: 2, label: "About", link: "/about" },
-  { id: 3, label: "Portfolio", link: "/portfolio" },
-  { id: 4, label: "Clients", link: "/clients" },
-  { id: 5, label: "Blog", link: "/blog" },
-  { id: 6, label: "Contact", link: "/contact" },
+  { id: 1, label: "Home", link: "/" },
+  { id: 2, label: "About", link: "/" },
+  { id: 3, label: "Portfolio", link: "/" },
+  { id: 4, label: "Clients", link: "/" },
+  { id: 5, label: "Blog", link: "/" },
+  { id: 6, label: "Contact", link: "/" },
 ];
 
 const menus = menuItems.map((item) => (
