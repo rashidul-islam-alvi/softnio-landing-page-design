@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Logo from "./logo";
+import Link from "next/link";
 
 interface MenuItem {
   id: number;
@@ -21,7 +22,7 @@ const NavbarMobile = ({ menuItems }: NavbarMobileProps) => {
       <ul className="flex flex-col items-center gap-10 ">
         {menuItems.map((item) => (
           <li key={item.id} className="text-white text-3xl hover:text-gray-500">
-            {item.label}{" "}
+            <Link href={item.link}>{item.label}</Link>
           </li>
         ))}
       </ul>
