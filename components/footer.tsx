@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <section className="bg-footer-background-image relative  bg-no-repeat bg-cover">
       <div className="bg-black/80 absolute w-full h-full z-10" />
-      <div className="py-[30px] sm:py-[120px] relative z-20">
+      <div className="py-[30px] sm:py-28 lg:py-[120px] relative z-20">
         <MaxWidthWrapper>
           <div>
             {/** footer heading */}

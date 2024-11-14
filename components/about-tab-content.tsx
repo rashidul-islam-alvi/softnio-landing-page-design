@@ -40,7 +40,7 @@ export const TabContent: React.FC<TabContentProps> = ({ content }) => (
           <Call />
           <p
             className={cn(
-              "text-[#0A1425] text-sm sm:text-lg leading-6 font-bold",
+              "text-[#0A1425] text-sm md:text-lg leading-6 font-bold",
               roboto.className
             )}
           >

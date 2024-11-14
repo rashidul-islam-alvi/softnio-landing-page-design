@@ -9,8 +9,8 @@ const socialIcons = [
     alt: "Facebook",
   },
   { id: 2, iconUrl: "/twitter.svg", alt: "Twitter" },
-  { id: 3, iconUrl: "insta.svg", alt: "Instagram" },
-  { id: 4, iconUrl: "link.svg", alt: "Linkedin" },
+  { id: 3, iconUrl: "/insta.svg", alt: "Instagram" },
+  { id: 4, iconUrl: "/link.svg", alt: "Linkedin" },
 ];
 
 const SocialLinks = () => {
@@ -24,7 +24,7 @@ const SocialLinks = () => {
           <ImageComponent
             src={icon.iconUrl}
             alt={icon.alt}
-            className=" size-4 sm:size-[18px]"
+            className="size-4 sm:size-[18px]"
           />
         </button>
       ))}
