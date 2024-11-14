@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
-import Link from "next/link";
 import { raleway } from "@/fonts";
 import { HamburgerMenu } from "@/icons";
 import { Cross1Icon } from "@radix-ui/react-icons";
@@ -33,9 +32,7 @@ const menus = menuItems.map((item) => (
     key={item.id}
     className={cn("text-[15px] font-medium text-white", raleway.className)}
   >
-    <Link href={item.link} prefetch={false}>
-      {item.label}
-    </Link>
+    <a href={item.link}>{item.label}</a>
   </li>
 ));
 
