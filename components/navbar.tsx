@@ -94,15 +94,14 @@ const Navbar = () => {
               )}
             </button>
           </div>
-
-          {/* mobile nav */}
-          <div
-            className={`absolute ${
-              isOpen ? "-left-9  xs:-left-12 md:-left-40" : "-left-[200%]"
-            } top-0 bg-chili-red h-screen z-[30000] w-4/5 block lg:hidden  transition-all duration-300`}
-          >
-            <NavbarMobile menuItems={menuItems} />
-          </div>
+        </div>
+        {/* mobile nav */}
+        <div
+          className={`absolute ${
+            isOpen ? "-left-9  xs:-left-12 md:-left-40" : "-left-[200%]"
+          } top-0 bg-chili-red h-screen z-[30000] w-4/5 block lg:hidden  transition-all duration-300`}
+        >
+          <NavbarMobile menuItems={menuItems} />
         </div>
       </MaxWidthWrapper>
     </section>
