@@ -20,13 +20,8 @@ const NavbarMobile = ({ menuItems }: NavbarMobileProps) => {
 
       <ul className="flex flex-col items-center gap-10 ">
         {menuItems.map((item) => (
-          <li key={item.id}>
-            <a
-              href={item.link}
-              className="text-white text-3xl hover:text-gray-500"
-            >
-              {item.label}
-            </a>
+          <li key={item.id} className="text-white text-3xl hover:text-gray-500">
+            {item.label}{" "}
           </li>
         ))}
       </ul>

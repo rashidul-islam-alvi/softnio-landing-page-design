@@ -32,7 +32,7 @@ const menus = menuItems.map((item) => (
     key={item.id}
     className={cn("text-[15px] font-medium text-white", raleway.className)}
   >
-    <a href={item.link}>{item.label}</a>
+    {item.label}
   </li>
 ));
 
