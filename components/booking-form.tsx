@@ -61,7 +61,7 @@ const BookingForm = () => {
                 <FormItem className="flex-1">
                   <FormControl>
                     <Input
-                      className="h-[46px] border border-white rounded-none text-[14px] leading-[22px] text-white placeholder:text-white"
+                      className="h-[46px] border border-white rounded-none text-sm leading-[22px] text-white placeholder:text-white"
                       placeholder="Your Name"
                       {...field}
                     />
@@ -78,7 +78,7 @@ const BookingForm = () => {
                 <FormItem className="flex-1">
                   <FormControl>
                     <Input
-                      className="h-[46px] border border-white rounded-none text-[14px] leading-[22px] text-white placeholder:text-white"
+                      className="h-[46px] border border-white rounded-none text-sm leading-[22px] text-white placeholder:text-white"
                       placeholder="Your Email"
                       type="email"
                       {...field}
@@ -142,7 +142,7 @@ const BookingForm = () => {
                 <FormItem className="flex-1">
                   <FormControl>
                     <Input
-                      className="h-[46px] border border-white rounded-none text-[14px] leading-[22px] text-white placeholder:text-white"
+                      className="h-[46px] border border-white rounded-none text-sm leading-[22px] text-white placeholder:text-white"
                       placeholder="Total People"
                       type="number"
                       {...field}
@@ -171,7 +171,7 @@ const BookingForm = () => {
           />
 
           <Button
-            className="h-[48px]  sm:h-[56px] sm:w-[142px] w-[128px] text-[18px]"
+            className="h-12  sm:h-[56px] sm:w-[142px] w-32 text-lg"
             variant="mustardYellow"
             type="submit"
           >

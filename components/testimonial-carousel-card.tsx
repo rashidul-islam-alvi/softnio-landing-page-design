@@ -20,13 +20,13 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
   return (
-    <div className="mt-6 flex flex-col sm:flex-row-reverse ">
+    <div className="mt-6 flex flex-col lg:flex-row-reverse ">
       {/** testimonial video */}
       <div className="relative">
         <ImageComponent
           src="/t-video.jpg"
           alt="testimonial_video"
-          className="h-[240px] w-full sm:w-[763.6px] sm:h-full"
+          className="h-60 w-full lg:w-[763.6px] lg:h-full"
         />
 
         <div className="absolute top-[45%] left-[40%] sm:left-[45%]">
@@ -40,25 +40,25 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
         </div>
         <p
           className={cn(
-            "text-[18px] sm:text-[20px] sm:leading-[34px] leading-7 text-[#0A1425] pl-[19px] sm:pl-[26px] pt-[20px]  ",
+            "text-lg sm:text-xl sm:leading-[34px] leading-7 text-[#0A1425] pl-[19px] sm:pl-[26px] pt-5  ",
             roboto.className
           )}
         >
           {testimonial.feedback}
         </p>
 
-        <div className="mt-10 sm:mt-[164px] flex  justify-between border-b border-black">
+        <div className="mt-10 lg:mt-[164px] flex  justify-between border-b border-black">
           {/** testimonial  author info */}
           <div>
             <h2
               className={cn(
-                "text-[18px] leading-5 font-bold mb-[3px]",
+                "text-lg leading-5 font-bold mb-[3px]",
                 bebasNeue.className
               )}
             >
               {testimonial.name}
             </h2>
-            <p className={cn("text-[14px] leading-[13.3px]", roboto.className)}>
+            <p className={cn("text-sm leading-[13.3px]", roboto.className)}>
               {testimonial.location}
             </p>
           </div>
@@ -71,7 +71,7 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
               alt={testimonial.avatarAlt}
             />
 
-            <div className="h-2 w-[40px] bg-chili-red absolute -bottom-[1px]" />
+            <div className="h-2 w-10 bg-chili-red absolute -bottom-[1px]" />
           </div>
         </div>
       </div>

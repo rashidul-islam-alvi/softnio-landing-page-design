@@ -32,7 +32,7 @@ const Footer = () => {
 
               <p
                 className={cn(
-                  "text-[16px] sm:text-[21px] tracking-[3%] text-white",
+                  "text-base sm:text-[21px] tracking-[3%] text-white",
                   montserrat.className
                 )}
               >

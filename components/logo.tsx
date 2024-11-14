@@ -9,7 +9,7 @@ const Logo = () => {
       <LogoIcon />
       <h2
         className={cn(
-          "text-[28.44px] leading-[28.4px] text-white font-[500]",
+          "text-[28.44px] leading-[28.4px] text-white font-medium",
           poppins.className
         )}
       >

@@ -19,12 +19,12 @@ const SocialLinks = () => {
       {socialIcons.map((icon) => (
         <button
           key={icon.id}
-          className="size-[36px] sm:size-[53.45px] hover:bg-white/30 duration-300  transition-all border border-white flex justify-center items-center rounded-full"
+          className="size-9 sm:size-[53.45px] hover:bg-white/30 duration-300  transition-all border border-white flex justify-center items-center rounded-full"
         >
           <ImageComponent
             src={icon.iconUrl}
             alt={icon.alt}
-            className=" size-[16px] sm:size-[18px]"
+            className=" size-4 sm:size-[18px]"
           />
         </button>
       ))}

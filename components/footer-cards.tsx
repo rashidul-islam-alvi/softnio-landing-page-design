@@ -55,7 +55,7 @@ const footerContents: FooterContent[] = [
 
 const FooterCards = () => {
   return (
-    <div className="flex flex-col sm:flex-row gap-6 justify-between">
+    <div className="flex flex-col lg:flex-row gap-6 justify-between">
       {footerContents.map((content) => (
         <div
           key={content.id}
@@ -68,10 +68,10 @@ const FooterCards = () => {
             imageClassName="object-contain"
           />
 
-          <div className="flex flex-col gap-[12px] items-center">
+          <div className="flex flex-col gap-3 items-center">
             <h2
               className={cn(
-                "text-[24px] leading-[28px] tracking-[2.5px] font-medium  text-white",
+                "text-lg leading-7 tracking-[2.5px] font-medium  text-white",
                 bebasNeue.className
               )}
             >
@@ -83,7 +83,7 @@ const FooterCards = () => {
                 <p
                   key={detail.value}
                   className={cn(
-                    "text-[16px] leading-[25px] font-[300] text-[#F7F8F9] text-center",
+                    "text-sm leading-[25px] font-light text-[#F7F8F9] text-center",
                     roboto.className
                   )}
                 >

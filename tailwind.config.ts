@@ -9,6 +9,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "391px",
+        sm: "767px",
+        md: "991px",
+        lg: "1279px",
+        xl: "1440px",
+        "2xl": "1920px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -72,9 +80,7 @@ const config: Config = {
         },
       },
     },
-    screens: {
-      sm: "391px",
-    },
+
     boxShadow: {
       "custom-shadow": "0px 8px 9px rgba(0, 0, 0, 0.25)",
       "custom-shadow-two": "0px 7px 16px rgba(0, 0, 0,0.1)",

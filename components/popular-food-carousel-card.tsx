@@ -25,20 +25,15 @@ const CarouselCard = ({ carouselItem }: CarouselCardProps) => {
         imageClassName="object-contain"
       />
 
-      <div className=" w-[57px] h-[4px] bg-chili-red my-6" />
+      <div className=" w-[57px] h-1 bg-chili-red my-6" />
       <div className="flex flex-col justify-center items-center">
-        <h2
-          className={cn(
-            "text-[24px] font-bold leading-[36px]",
-            bebasNeue.className
-          )}
-        >
+        <h2 className={cn("text-2xl font-bold leading-9", bebasNeue.className)}>
           {carouselItem.title}
         </h2>
 
         <p
           className={cn(
-            "text-[16px] leading-[32px] tracking-[-1.5%]",
+            "text-base leading-8 tracking-[-1.5%]",
             inter.className
           )}
         >

@@ -17,20 +17,20 @@ interface TabContentProps {
 }
 
 export const TabContent: React.FC<TabContentProps> = ({ content }) => (
-  <div className="flex flex-col mt-6 sm:mt-8 sm:gap-8 gap-[12px]">
+  <div className="flex flex-col mt-6 lg:mt-8">
     {/* Display Content */}
     <HeadingTitle label={content.title} />
-    <p className="mt-[18px] text-[16px] leading-[26px] text-[#333]">
+    <p className="text-base leading-[26px] text-[#333] mt-3 lg:mt-[18px]">
       {content.description}
     </p>
 
-    <div className="flex gap-4 mt-[20px] sm:mt-[0px] sm:gap-8 items-center">
+    <div className="flex gap-4 8 items-center mt-8">
       {content.buttonText && (
         <Button
           variant="mustardYellow"
           size="lg"
           aria-label="Learn more about us"
-          className="w-[161px] h-[56px] text-[16px] sm:text-[18px] leading-[24px] font-bold rounded-none"
+          className="w-[161px] h-14 text-base sm:text-lg leading-6 font-bold rounded-none"
         >
           {content.buttonText}
         </Button>
@@ -40,7 +40,7 @@ export const TabContent: React.FC<TabContentProps> = ({ content }) => (
           <Call />
           <p
             className={cn(
-              "text-[#0A1425] text-[14px] sm:text-[18px] leading-[24px] font-bold",
+              "text-[#0A1425] text-sm sm:text-lg leading-6 font-bold",
               roboto.className
             )}
           >

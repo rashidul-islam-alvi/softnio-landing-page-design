@@ -23,7 +23,7 @@ export const TabNavigation: React.FC<TabNavigationProps> = ({
         key={tab.label}
         onClick={() => onTabClick(tab.label)}
         className={cn(
-          `px-4 py-[6px] sm:justify-normal justify-center flex flex-1 sm:flex-none cursor-pointer text-[14px] text-[#333333] font-medium ${
+          `px-4 py-[6px] sm:justify-normal justify-center flex flex-1 sm:flex-none cursor-pointer text-sm text-[#333333] font-medium ${
             activeTab === tab.label ? "bg-chili-red text-white" : "font-normal"
           }`,
           inter.className

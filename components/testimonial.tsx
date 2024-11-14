@@ -54,9 +54,9 @@ const testimonials: Testimonial[] = [
 
 const Testimonial = () => {
   return (
-    <section className="relative">
+    <section className="relative overflow-x-hidden">
       {/* testimonial background decorators */}
-      <div className="hidden sm:block absolute -right-[190px] bottom-[101.19px]">
+      <div className="hidden lg:block absolute -right-[190px] bottom-[101.19px]">
         <ImageComponent
           src="/t-bg-decor-right.png"
           alt="testimonial_decorator_grass"
@@ -64,7 +64,7 @@ const Testimonial = () => {
         />
       </div>
 
-      <div className="hidden sm:block absolute -left-[190px] top-[171.19px]">
+      <div className="hidden lg:block absolute -left-[190px] top-[171.19px]">
         <ImageComponent
           src="/t-bg-decor-left.png"
           alt="testimonial_decorator_grass"
@@ -73,7 +73,7 @@ const Testimonial = () => {
       </div>
 
       <MaxWidthWrapper>
-        <div className="pt-[32px] pb-[30px] sm:py-[120px]">
+        <div className="pt-8 pb-[30px] lg:py-[120px]">
           <TestimonialCarousel testimonials={testimonials} />
         </div>
       </MaxWidthWrapper>

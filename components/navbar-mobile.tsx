@@ -31,10 +31,7 @@ const NavbarMobile = ({ menuItems }: NavbarMobileProps) => {
         ))}
       </ul>
 
-      <Button
-        variant="mustardYellow"
-        className="h-[44px] w-[157px] text-[16px]"
-      >
+      <Button variant="mustardYellow" className="h-11 w-[157px] text-base">
         Book a table
       </Button>
     </div>

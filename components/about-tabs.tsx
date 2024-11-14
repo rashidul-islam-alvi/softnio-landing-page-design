@@ -37,7 +37,8 @@ const tabs: TabsProps[] = [
     image: "/hero-steak-image.png",
     content: {
       title: "Experience Content",
-      description: "Details about experience go here.",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.",
     },
   },
   {
@@ -45,7 +46,8 @@ const tabs: TabsProps[] = [
     image: "/about-burger.png",
     content: {
       title: "Contact Content",
-      description: "Details about contact go here.",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.",
     },
   },
 ];
@@ -57,14 +59,14 @@ const AboutTabs: React.FC = () => {
   const activeTabData = tabs.find((tab) => tab.label === activeTab) || tabs[0];
 
   return (
-    <div className="flex flex-col sm:flex-row sm:gap-20  gap-8">
+    <div className="flex flex-col sm:flex-row lg:gap-5  gap-8">
       {/* Left side image */}
       <div className="flex-1 relative ">
         <MarketPlace />
         <ImageComponent
           src={activeTabData.image}
           alt={`${activeTabData.label} image`}
-          className="h-[246.03px] sm:h-[460px] z-10"
+          className="h-[246.03px] sm:h-full lg:h-[460px]  z-10"
         />
       </div>
 

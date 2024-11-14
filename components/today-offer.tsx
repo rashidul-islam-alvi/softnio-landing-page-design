@@ -1,15 +1,12 @@
-import Image from "next/image";
-import React from "react";
+import ImageComponent from "./ui/image";
 
 const TodayOffer = () => {
   return (
     <div className="size-[120px] flex items-center justify-center bg-[#FEBF00] rounded-full shadow-custom-shadow">
-      <Image
+      <ImageComponent
         src="/today-offer.png"
         alt="today-offer-banner"
-        width={105.66}
-        height={105.66}
-        loading="lazy"
+        className="size-[105.66px]"
       />
     </div>
   );

@@ -7,7 +7,7 @@ const Booking = () => {
   return (
     <div className="bg-booking-form-background-image bg-no-repeat bg-cover">
       <MaxWidthWrapper>
-        <div className="py-[30px] sm:pt-[120px] sm:pb-[86px] flex flex-col gap-10 max-w-[635px]">
+        <div className="py-[30px] lg:pt-[120px] lg:pb-[86px] flex flex-col  gap-10 lg:max-w-[635px]">
           {/** booking header **/}
           <Header
             mainHeadingTitle="Book Your Table"

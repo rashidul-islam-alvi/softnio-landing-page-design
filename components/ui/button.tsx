@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
-
 import { cn } from "@/lib/utils";
 import { roboto } from "@/fonts";
 
@@ -19,8 +18,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        mustardYellow:
-          "bg-mustard-yellow rounded-none uppercase text-[15.3px] leading-[20.4px] sm:text-[18px] leading-[24px] font-bold",
+        mustardYellow: "bg-mustard-yellow rounded-none uppercase",
         icon: "size-[40px] sm:size-[60px] rounded-full bg-white",
       },
       size: {

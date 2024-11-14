@@ -50,7 +50,15 @@ const PopularCarousel = ({ carouselItems }: PopularCarouselProps) => {
         }}
         breakpoints={{
           // When window width is >= 390px
-          391: {
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+          },
+          1025: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+          },
+          1279: {
             slidesPerView: 4,
             spaceBetween: 32,
           },
@@ -59,8 +67,8 @@ const PopularCarousel = ({ carouselItems }: PopularCarouselProps) => {
         modules={[Autoplay]}
         className="w-full"
       >
-        {carouselItems.concat(carouselItems).map((carouselItem) => (
-          <SwiperSlide key={carouselItem.id}>
+        {carouselItems.concat(carouselItems).map((carouselItem, index) => (
+          <SwiperSlide key={`${carouselItem.id}-${index}`}>
             <CarouselCard carouselItem={carouselItem} />
           </SwiperSlide>
         ))}

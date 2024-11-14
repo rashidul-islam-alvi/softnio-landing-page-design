@@ -35,14 +35,16 @@ const features: FeatureProps[] = [
 
 const AboutFeatures: React.FC = () => {
   return (
-    <div className="flex flex-col sm:flex-row gap-8 mt-[74px]">
+    <div className="flex flex-col sm:grid sm:grid-cols-2  lg:flex  lg:flex-row gap-8 mt-[74px]">
       {features.map((feature) => (
         <div
           key={feature.id}
-          className="flex sm:w-[440px] gap-4 items-center bg-white"
+          className={`flex lg:w-[440px] gap-4 items-center lg:justify-normal sm:justify-center bg-white ${
+            feature.id === 3 && "col-span-2 "
+          }`}
         >
           <div className="size-[70px] sm:size-[90px] rounded-full flex items-center shadow-custom-shadow-two justify-center">
-            {feature.icon}
+            <div className="size-[31.1px] lg:size-[40px]">{feature.icon}</div>
           </div>
           <div>
             <h3
